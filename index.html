@@ -4,362 +4,391 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRYPTO</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <title>Meipaly</title>
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <!-- Slick.CSS -->
+    <link rel="stylesheet" href="libs/slick/slick.css" />
+    <link rel="stylesheet" href="libs/slick/slick-theme.css" />
+    <!-- Facybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <!-- Animate Hiệu Ứng Chữ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <link rel="stylesheet" href="./css/style.css">
+
+
+    <!-- CSS cá nhân để đặt cuối để ưu tiên cao nhất -->
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
 <body>
-    <header>
-        <nav class="border-gray-200 dark:bg-gray-900 container mx-auto">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Cyber
-                        Crypto</span>
-                </a>
-                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                    <button type="button"
-                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get
-                        started</button>
-                    <button data-collapse-toggle="navbar-sticky" type="button"
-                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                        aria-controls="navbar-sticky" aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 17 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M1 1h15M1 7h15M1 13h15" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-                    <ul
-                        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-                                aria-current="page">Home</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-    </header>
-    <!-- Carousel -->
-    <section class="py-5">
-        <div class="container mx-auto">
-            <div class="flex flex-col-reverse md:flex-row items-center">
-                <div class="carousel__text space-y-10">
-                    <h1 class="text-7xl ">Trsuted & Secure <span class="text-gradient">Crypto</span> Market Exchange.
-                    </h1>
-                    <p>Already have a website? Try our hosting to alive it with industry-leading load times.</p>
-                    <button type="button"
-                        class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Start
-                        Trading</button>
-                    <h1>A+ Rating</h1>
-                    <p>Avg rating 4.8 makes us world most best apps.</p>
-                </div>
-                <div class="carousel__img w-full">
-                    <img src="./img/bank.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Platfrom -->
-    <section class="py-5">
-        <div class="title space-y-10">
-            <h1 class="text-5xl text-center">Trusted <span class="text-gradient">Cryptocurrency</span> Platform</h1>
-            <p class="text-center">ano has a variety of features that make it the best place to start trading</p>
-        </div>
-        <div class="platfrom__content container mx-auto py-5">
-            <div class="mb-4  dark:border-gray-700">
-                <ul class="flex flex-wrap -mb-px text-sm font-medium text-center justify-center" id="default-styled-tab"
-                    data-tabs-toggle="#default-styled-tab-content"
-                    data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500"
-                    data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300"
-                    role="tablist">
-                    <li class="me-2" role="presentation">
-                        <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-styled-tab"
-                            data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile"
-                            aria-selected="false">Profile</button>
-                    </li>
-                    <li class="me-2" role="presentation">
-                        <button
-                            class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-                            id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button" role="tab"
-                            aria-controls="dashboard" aria-selected="false">Contact</button>
-                    </li>
+    <!-- Header -->
+    <header id="" class="">
+        <div class="header__content container">
+            <!-- brand - logo -->
+            <a class="brand" href="">
+                <i class="fa-brands fa-atlassian"></i>
+                <span>meipaly</span>
+            </a>
+            <!-- Nav -->
+            <nav>
+                <!-- ul KO Thứ Tự - ol Có Thứ Tự -->
+                <ul class="Menu">
+                    <li class="Active"><a href="">HOME</a></li>
+                    <li><a href="#Services__ID">SERVICE</a></li>
+                    <li><a href="">SHOWCASE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">CONTACT</a></li>
                 </ul>
-            </div>
-            <div id="default-styled-tab-content">
-                <div class="" id="styled-profile" role="tabpanel"
-                    aria-labelledby="profile-tab ">
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-                        <div
-                            class=" bg-gray-800 text-center rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-                            <a href="#">
-                                <img class="rounded-t-lg mx-auto" src="./img/trusted_1.png" alt="" />
-                            </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">
-                                        Best
-                                        Exchange
-                                        Rate</h5>
-                                </a>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Convert data noise
-                                    intelligent for
-                                    quis
-                                    lorem.</p>
-                                <a href="#"
-                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="bg-gray-800 text-center rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-                            <a href="#">
-                                <img class="rounded-t-lg mx-auto" src="./img/trusted_1.png" alt="" />
-                            </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">
-                                        Best
-                                        Exchange
-                                        Rate</h5>
-                                </a>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Convert data noise
-                                    intelligent for
-                                    quis
-                                    lorem.</p>
-                                <a href="#"
-                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div
-                            class=" bg-gray-800 text-center rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-                            <a href="#">
-                                <img class="rounded-t-lg mx-auto" src="./img/trusted_1.png" alt="" />
-                            </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">
-                                        Best
-                                        Exchange
-                                        Rate</h5>
-                                </a>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Convert data noise
-                                    intelligent for
-                                    quis
-                                    lorem.</p>
-                                <a href="#"
-                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="bg-gray-800 text-center rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-                            <a href="#">
-                                <img class="rounded-t-lg mx-auto" src="./img/trusted_1.png" alt="" />
-                            </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">
-                                        Best
-                                        Exchange
-                                        Rate</h5>
-                                </a>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Convert data noise
-                                    intelligent for
-                                    quis
-                                    lorem.</p>
-                                <a href="#"
-                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="bg-gray-800 text-center rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-                            <a href="#">
-                                <img class="rounded-t-lg mx-auto" src="./img/trusted_1.png" alt="" />
-                            </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">
-                                        Best
-                                        Exchange
-                                        Rate</h5>
-                                </a>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Convert data noise
-                                    intelligent for
-                                    quis
-                                    lorem.</p>
-                                <a href="#"
-                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="bg-gray-800 text-center rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-                            <a href="#">
-                                <img class="rounded-t-lg mx-auto" src="./img/trusted_1.png" alt="" />
-                            </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">
-                                        Best
-                                        Exchange
-                                        Rate</h5>
-                                </a>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Convert data noise
-                                    intelligent for
-                                    quis
-                                    lorem.</p>
-                                <a href="#"
-                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="" id="styled-dashboard" role="tabpanel"
-                    aria-labelledby="dashboard-tab">
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-                        <div class="bg-gray-800 text-center rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-                            <a href="#">
-                                <img class="rounded-t-lg mx-auto" src="./img/trusted_1.png" alt="" />
-                            </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">
-                                        Best
-                                        Exchange
-                                        Rate</h5>
-                                </a>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Convert data noise
-                                    intelligent for
-                                    quis
-                                    lorem.</p>
-                                <a href="#"
-                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="bg-gray-800 text-center rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-                            <a href="#">
-                                <img class="rounded-t-lg mx-auto" src="./img/trusted_1.png" alt="" />
-                            </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">
-                                        Best
-                                        Exchange
-                                        Rate</h5>
-                                </a>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Convert data noise
-                                    intelligent for
-                                    quis
-                                    lorem.</p>
-                                <a href="#"
-                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="bg-gray-800 text-center rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-                            <a href="#">
-                                <img class="rounded-t-lg mx-auto" src="./img/trusted_1.png" alt="" />
-                            </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">
-                                        Best
-                                        Exchange
-                                        Rate</h5>
-                                </a>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Convert data noise
-                                    intelligent for
-                                    quis
-                                    lorem.</p>
-                                <a href="#"
-                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Carousel - Banner -->
+    <!-- Thẻ section là thẻ gom nhóm lớn hơn div -->
+    <section class="Carousel">
+        <!-- <img src="./img/home_slider.jpg" alt="" width="100%"> -->
+        <div class="carousel__content">
+
+            <h1>WELCOME TO MEIPALY AGENCY</h1>
+            <p>SMART WEB
+                <br>DESIGN AGENCY
+            </p>
+            <button>READ MORE</button>
+            <div class="arrow__down">
+                <i class="fa-solid fa-chevron-down fa-3x"></i>
             </div>
         </div>
-
-
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <!-- Services -->
+    <section class="Services py-5" id="Services__ID">
+        <div class="container">
+            <div class="title">
+                <p>
+                    SERVICES WE ARE OFFERING
+                </p>
+                <h1>WE DESIGN DIGITAL PRODUCTS THAT HELP GROW BUSINESSES.</h1>
+                <p>We are committed to providing our customers with exceptional service while offering <br>
+                    our employees the best training.
+                </p>
+            </div>
+            <div class="services__content">
+                <div class="services__slider">
+                    <div class="item">
+                        <i class="fa-solid fa-dice-d6 fa-4x"></i>
+                        <p>app mobile <br> Development</p>
+
+                    </div>
+                    <div class="item">
+                        <i class="fa-brands fa-autoprefixer fa-4x"></i>
+                        <p>digital <br> Maketting</p>
+                    </div>
+                    <div class="item">
+                        <i class="fa-brands fa-500px fa-4x"></i>
+                        <p>seo & content <br> writing</p>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-blog fa-4x"></i>
+                        <p>Website <br> Development</p>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-dice-d6"></i>
+                        <p>app mobile <br> Development</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section>
+        <section class="Blog py-5" id="Blog__ID">
+            <div class="container">
+                <div class="title">
+                    <p>
+                        OUR NEWS & ARTICLES
+                    </p>
+                    <h1>LATEST BLOG POSTS</h1>
+                    <p>We are committed to providing our customers with exceptional service while offering our <br>
+                        employees the best training.
+                    </p>
+                </div>
+
+                <div class="blog__content">
+                    <div class="blog__item item-1">
+                        <img src="img/showcase_img_1.webp" alt="">
+                        <div class="overlay">
+                            <div class="overlay__icon">
+                                <a href="img/showcase_img_1.webp" data-fancybox="gallery" data-caption="#1">
+                                    <i class="fa-solid fa-magnifying-glass-plus fa-2x"></i>
+                                </a>
+                            </div>
+                            <div class="overlay__text">
+                                <h3>LOGO</h3>
+                                <p>BLIPPIN BIRD</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__item">
+                        <img src="img/grid-metro-2.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay__icon">
+                                <a href="img/showcase_img_1.webp" data-fancybox="gallery" data-caption="#1">
+                                    <i class="fa-solid fa-magnifying-glass-plus fa-2x"></i>
+                                </a>
+                            </div>
+                            <div class="overlay__text">
+                                <h3>LOGO</h3>
+                                <p>BLIPPIN BIRD</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__item">
+                        <img src="img/grid-metro-3.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay__icon">
+                                <a href="img/showcase_img_1.webp" data-fancybox="gallery" data-caption="#1">
+                                    <i class="fa-solid fa-magnifying-glass-plus fa-2x"></i>
+                                </a>
+                            </div>
+                            <div class="overlay__text">
+                                <h3>LOGO</h3>
+                                <p>BLIPPIN BIRD</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__item">
+                        <img src="img/grid-metro-4.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay__icon">
+                                <a href="img/showcase_img_1.webp" data-fancybox="gallery" data-caption="#1">
+                                    <i class="fa-solid fa-magnifying-glass-plus fa-2x"></i>
+                                </a>
+                            </div>
+                            <div class="overlay__text">
+                                <h3>LOGO</h3>
+                                <p>BLIPPIN BIRD</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__item">
+                        <img src="img/grid-metro-5.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay__icon">
+                                <a href="img/showcase_img_1.webp" data-fancybox="gallery" data-caption="#1">
+                                    <i class="fa-solid fa-magnifying-glass-plus fa-2x"></i>
+                                </a>
+                            </div>
+                            <div class="overlay__text">
+                                <h3>LOGO</h3>
+                                <p>BLIPPIN BIRD</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__item">
+                        <img src="img/grid-metro-6.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay__icon">
+                                <a href="img/showcase_img_1.webp" data-fancybox="gallery" data-caption="#1">
+                                    <i class="fa-solid fa-magnifying-glass-plus fa-2x"></i>
+                                </a>
+                            </div>
+                            <div class="overlay__text">
+                                <h3>LOGO</h3>
+                                <p>BLIPPIN BIRD</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__item">
+                        <img src="img/grid-metro-7.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay__icon">
+                                <a href="img/showcase_img_1.webp" data-fancybox="gallery" data-caption="#1">
+                                    <i class="fa-solid fa-magnifying-glass-plus fa-2x"></i>
+                                </a>
+                            </div>
+                            <div class="overlay__text">
+                                <h3>LOGO</h3>
+                                <p>BLIPPIN BIRD</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__item">
+                        <img src="img/grid-metro-8.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay__icon">
+                                <a href="img/showcase_img_1.webp" data-fancybox="gallery" data-caption="#1">
+                                    <i class="fa-solid fa-magnifying-glass-plus fa-2x"></i>
+                                </a>
+                            </div>
+                            <div class="overlay__text">
+                                <h3>LOGO</h3>
+                                <p>BLIPPIN BIRD</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__item">
+                        <img src="img/grid-metro-9.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay__icon">
+                                <a href="img/showcase_img_1.webp" data-fancybox="gallery" data-caption="#1">
+                                    <i class="fa-solid fa-magnifying-glass-plus fa-2x"></i>
+                                </a>
+                            </div>
+                            <div class="overlay__text">
+                                <h3>LOGO</h3>
+                                <p>BLIPPIN BIRD</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__item item-10">
+                        <img src="img/grid-metro-10.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay__icon">
+                                <a href="img/showcase_img_1.webp" data-fancybox="gallery" data-caption="#1">
+                                    <i class="fa-solid fa-magnifying-glass-plus fa-2x"></i>
+                                </a>
+                            </div>
+                            <div class="overlay__text">
+                                <h3>LOGO</h3>
+                                <p>BLIPPIN BIRD</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+        </section>
+
+        <!-- Counter -->
+        <section class="counter py-5">
+            <div class="counter__content container">
+                <div class="count_item">
+                    <p class="number___countup">8507</p>
+                    <h2>PROJECTS COMPLETED</h2>
+                </div>
+                <div class="count_item">
+                    <p class="number___countup">480</p>
+                    <h2>ACTIVE CLIENTS</h2>
+                </div>
+                <div class="count_item">
+                    <p class="number___countup">625</p>
+                    <h2>CUPS OF COFFEE</h2>
+                </div>
+                <div class="count_item">
+                    <p class="number___countup">9744</p>
+                    <h2>HAPPY CLIENTS</h2>
+                </div>
+            </div>
+
+        </section>
+        <!-- Digital -->
+        <section class="Digital py-5" id="Digital__ID">
+            <div class="container">
+                <div class="title">
+                    <p>
+                        HOW DO WE WORKS
+                    </p>
+                    <h1>DIGITAL EXPERIENCE</h1>
+                    <p>We are committed to providing our customers with exceptional service while offering <br>
+                        our employees the best training.
+                    </p>
+                </div>
+                <div class="digital__content container">
+                    <!-- <video controls poster="./img/home_slider.jpg">
+                        <source src="img/video.mp4">
+                    </video> Cách 1 nhúng video trực tiếp -->
+
+                    <!-- cách 2 nhúng video từ bên ngoài -->
+
+                    <iframe width="100%" height="750px"
+                        src="https://www.youtube.com/embed/Noox-uPYHUw?si=o7cinHtGJH9qntSa" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <iframe width="100%" height="750px"
+                        src="https://www.youtube.com/embed/TZqPyymQg5w?si=6X4d_-QXBRnmxyl6" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+        </section>
+        <!-- Contact -->
+        <section class="Contact py-5" id="Contact__ID">
+            <div class="container">
+                <div class="title">
+                    <h1 class=" WOW animate__animated animate__bounce" style="color: black;">CONTACT</h1>
+                    <p>Thank you for your interest in our website & our services. If you have any <br>
+                        questions, please write us a message now!
+                    </p>
+                </div>
+                <div class="contact__content container">
+                    <div class="contact__map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4797617024433!2d106.79272407317069!3d10.851067657816323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527403bc427e3%3A0xb138a46881d2bdbb!2zMzg1IE1hbiBUaGnhu4duLCBQaMaw4budbmcgVMOibiBQaMO6LCBUaOG7pyDEkOG7qWMsIEjhu5MgQ2jDrSBNaW5oIDcwMDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1743770900220!5m2!1svi!2s"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="contact__from">
+                        <form>
+                            <input type="text" placeholder="Nhập Họ và Tên">
+                            <input type="email" placeholder="Nhập Email">
+                            <textarea placeholder="Nội Dung" rows="10"></textarea>
+                            <!-- <button>Submit</button> -->
+                            <input type="submit" value="Gửi Yêu Cầu">
+                        </form>
+                    </div>
+                </div>
+        </section>
+        <!-- Footer -->
+
+        <!-- script jquere -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- script slick -->
+        <script src="libs/slick/slick.min.js"></script>
+        <script>$(document).ready(function () {
+                $('.services__slider').slick({
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    dots: true,
+                    autoplay: true,
+                    autoplay: 2000
+                });
+            });</script>
+        <!-- script fancybox -->
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+        <script>Fancybox.bind("[data-fancybox]", {
+                // Your custom options
+            });
+        </script>
+        <!-- script countup waypoint -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+            integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./libs/countup/jquery.countup.min.js"></script>
+        <script>$('.number___countup').countUp();
+        </script>
+        <!-- wow.js -->
+        <script src="./libs/WOW.JS/dist/wow.min.js"></script>
+        <script>
+        new WOW().init();
+        </script>
+        
 </body>
 
 </html>
